@@ -17,7 +17,7 @@ RUN wget http://download.opensuse.org/repositories/home:/flavio_castelli:/phanto
   apt-key add Release.key && \
   rm Release.key
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends phantomjs && \
+    apt-get install -y --no-install-recommends --force-yes phantomjs && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ADD . .
