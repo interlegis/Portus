@@ -107,7 +107,7 @@ signup:
 
 # By default require ssl to be enabled when running on production
 check_ssl_usage:
-  enabled: true
+  enabled: false
 
 # Contains advanced options that tweak how Portus interacts with the
 # Registry. Don't touch any of these values unless you *really* know what you
